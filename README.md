@@ -25,21 +25,25 @@ Quando você acessa o servidor via **Nginx** (na URL `localhost:8080`), ele real
 
 ### Pré-requisitos
 
-- **Docker**: Certifique-se de ter o Docker instalado na sua máquina. Você pode verificar isso rodando o seguinte
-  comando:
+**Docker**: Certifique-se de ter o Docker instalado na sua máquina. Você pode verificar isso rodando o seguinte
+comando:
 
-  ```bash
-  docker --version
-  ```
+```bash
+docker --version
+```
 
 ### Clone o repositório
 
-  ```bash
-  git@github.com:LuizaAlanis/desafio-nginx-node.git
-  ```
+```bash
+git@github.com:LuizaAlanis/desafio-nginx-node.git
+```
 
 ### Construa e execute os containers
 
-  ```bash
-  docker-compose up -d --build
-  ```
+```bash
+docker-compose up -d --build
+```
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
