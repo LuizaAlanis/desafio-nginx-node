@@ -6,8 +6,7 @@ nomes cadastrados diretamente em uma página HTML servida pelo Nginx.
 
 ## Visão Geral
 
-Quando você acessa o servidor via **Nginx** (na URL `localhost:8080`), ele realiza uma requisição à aplicação **Node.js
-**, que:
+Quando você acessa o servidor via **Nginx** (na URL `localhost:8080`), ele realiza uma requisição à aplicação **Node.js**, que:
 
 1. Gera um nome aleatório.
 2. Insere esse nome na tabela `people` no banco de dados **MySQL**.
