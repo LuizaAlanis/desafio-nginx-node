@@ -20,8 +20,8 @@ services:
     restart: always
     volumes:
       - ./node:/usr/src/app
+      - /usr/src/app/node_modules
     working_dir: /usr/src/app
-    # command: node index.js  ← já está no Dockerfile
     depends_on:
       - db
     networks:
