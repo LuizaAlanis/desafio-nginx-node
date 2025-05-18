@@ -43,6 +43,11 @@ git@github.com:LuizaAlanis/desafio-nginx-node.git
 docker-compose up -d --build
 ```
 
+### Detalhes Técnicos
+
+Para garantir que a aplicação Node.js só inicie após o banco de dados MySQL estar 100% disponível, usamos o [dockerize](https://github.com/jwilder/dockerize)
+no container do Node. Isso evita erros de conexão no início, especialmente em ambientes com bancos grandes ou lentos para inicializar.
+
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
