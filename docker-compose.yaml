@@ -35,6 +35,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: nodedb
+    volumes:
+      - mysql-data:/var/lib/mysql
     networks:
       - app-network
 
