@@ -20,6 +20,11 @@ Quando você acessa o servidor via **Nginx** (na URL `localhost:8080`), ele real
 - **Docker**: Contêineres para isolar cada serviço e facilitar a configuração e execução do projeto.
 - **Docker Compose**: Para orquestrar os contêineres, facilitando o gerenciamento de dependências entre os serviços.
 
+### Detalhes Técnicos
+
+Para garantir que a aplicação Node.js só inicie após o banco de dados MySQL estar 100% disponível, usamos o [dockerize](https://github.com/jwilder/dockerize)
+no container do Node. Isso evita erros de conexão no início, especialmente em ambientes com bancos grandes ou lentos para inicializar.
+
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
@@ -42,11 +47,6 @@ git@github.com:LuizaAlanis/desafio-nginx-node.git
 ```bash
 docker-compose up -d --build
 ```
-
-### Detalhes Técnicos
-
-Para garantir que a aplicação Node.js só inicie após o banco de dados MySQL estar 100% disponível, usamos o [dockerize](https://github.com/jwilder/dockerize)
-no container do Node. Isso evita erros de conexão no início, especialmente em ambientes com bancos grandes ou lentos para inicializar.
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
